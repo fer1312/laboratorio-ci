@@ -1,4 +1,4 @@
-me: Pipeline de prueba
+name: Pipeline de prueba
 
 on:
   push:
