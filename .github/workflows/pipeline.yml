@@ -1,0 +1,17 @@
+me: Pipeline de prueba
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  mensaje:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v3
+
+      - name: Ejecutar mensaje
+        run: echo "Pipeline ejecutado
+             correctamente en GitHub Actions"
